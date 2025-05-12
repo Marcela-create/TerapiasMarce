@@ -1,0 +1,232 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 10px 100px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .logo img {
+            height: 100px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: black;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        footer img {
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            nav {
+                padding: 10px;
+            }
+
+            .logo img {
+                height: 60px;
+            }
+
+            .nav-links a {
+                font-size: 16px;
+            }
+
+            footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#servicio">Servicio</a></li>
+        </ul>
+    </nav>
+    <section id="servicio" style="text-align: center; padding: 50px;">
+        <h1 style="font-size: 36px; margin-bottom: 20px; font-style: italic; font-weight: normal;">"No solo tratamos fibromialgia, también podemos ayudarte con otras dolencias físicas y emocionales."</h1>
+        <h1 style="font-size: 36px; margin-bottom: 20px;">Nuestros Servicios</h1>
+        <p style="font-size: 18px; margin-bottom: 40px;">Descripción breve de los servicios ofrecidos.</p>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <div style="width: 200px; text-align: left; flex-shrink: 0;">
+                <img src="img/servicio1.jpg" alt="Counseling Psicológico" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                <h2 style="font-size: 24px; margin: 10px 0;">Counseling Psicológico</h2>
+                <p style="font-size: 16px;">Por zoom cada sesión</p>
+                <p style="font-size: 16px; font-weight: bold;">$20000 ARS - $40 USD</p>
+            </div>
+            <div style="width: 200px; text-align: left; flex-shrink: 0;">
+                <img src="img/servicio2.jpg" alt="Biomagnetismo Médico" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                <h2 style="font-size: 24px; margin: 10px 0;">Biomagnetismo Médico</h2>
+                <p style="font-size: 16px;">Dos protocolos: Enfermedades y Emociones atrapadas a distancia</p>
+                <p style="font-size: 16px; font-weight: bold;">$23000 ARS - $45 USD</p>
+            </div>
+            <div style="width: 200px; text-align: left; flex-shrink: 0;">
+                <img src="img/servicio3.jpg" alt="Péndulo Terapéutico" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                <h2 style="font-size: 24px; margin: 10px 0;">Péndulo Terapéutico</h2>
+                <p style="font-size: 16px;">Detectamos y limpiamos traumas, desgarros emocionales y demás</p>
+                <p style="font-size: 16px; font-weight: bold;">$25000 ARS - $49 USD</p>
+        </div>
+                    <div style="width: 200px; text-align: left; flex-shrink: 0;">
+                <img src="img/focusing.png" alt="Biomagnetismo Médico" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                <h2 style="font-size: 24px; margin: 10px 0;">Focusing: La "sensación sentida"</h2>
+               <p style="font-size: 16px;">Por zoom cada sesión</p>
+                <p style="font-size: 16px; font-weight: bold;">$20000 ARS - $40 USD</p>
+            </div>
+    </section>
+    <section id="contacto" style="padding: 50px; background-color: #f3f4f6; text-align: center;">
+        <h1 style="font-size: 36px; margin-bottom: 20px; color: #333;">Contáctanos</h1>
+        <p style="font-size: 18px; margin-bottom: 40px; color: #555;">Estamos aquí para ayudarte. Elige el medio que prefieras para comunicarte con nosotros:</p>
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+            <div style="width: 300px; text-align: center; flex-shrink: 0; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <img src="img/icono whatsapp.svg" alt="WhatsApp" style="width: 50px; margin-bottom: 15px;">
+                <h2 style="font-size: 24px; margin: 10px 0; color: #333;">WhatsApp</h2>
+                <p style="font-size: 16px; margin-bottom: 10px; color: #555;">
+                    <a href="https://api.whatsapp.com/send?phone=+5492262539414&text=quiero%20sanar%20fibromialgia" style="text-decoration: none; color: #007bff;">Enviar mensaje</a>
+                </p>
+            </div>
+            <div style="width: 300px; text-align: center; flex-shrink: 0; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <img src="img/icono mail.svg" alt="Correo Electrónico" style="width: 50px; margin-bottom: 15px;">
+                <h2 style="font-size: 24px; margin: 10px 0; color: #333;">Correo Electrónico</h2>
+                <p style="font-size: 16px; color: #555;"></p>
+                    <a href="mailto:marceladeneco@gmail.com" style="text-decoration: none; color: #007bff;">Enviar correo</a>
+                </p>
+            </div>
+            <div style="width: 300px; text-align: center; flex-shrink: 0; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <img src="img/icono insta.svg" alt="Instagram" style="width: 50px; margin-bottom: 15px;">
+                <h2 style="font-size: 24px; margin: 10px 0; color: #333;">Instagram</h2>
+                <p style="font-size: 16px; color: #555;">
+                    <a href="https://www.instagram.com/marcela.maidan/" style="text-decoration: none; color: #007bff;">Visítanos en Instagram</a>
+                </p>
+            </div>
+            <div style="width: 300px; text-align: center; flex-shrink: 0; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <img src="img/icono face.svg" alt="Facebook" style="width: 50px; margin-bottom: 15px;">
+                <h2 style="font-size: 24px; margin: 10px 0; color: #333;">Facebook</h2>
+                <p style="font-size: 16px; color: #555;">
+                    <a href="https://www.facebook.com/share/1ESCgTzfAd/" style="text-decoration: none; color: #007bff;">Visítanos en Facebook</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <p>© Copyright Lic. Marcela Maidana - 2025</p>
+    </footer>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const nav = document.querySelector("nav");
+        const navLinks = document.querySelector(".nav-links");
+        const burger = document.createElement("div");
+
+        burger.classList.add("burger");
+        burger.innerHTML = `
+            <span></span>
+            <span></span>
+            <span></span>
+        `;
+        nav.appendChild(burger);
+
+        burger.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+    });
+</script>
+<style>
+    .burger {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .burger span {
+        display: block;
+        height: 3px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    @media (max-width: 768px) {
+        .burger {
+            display: flex;
+        }
+
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        .nav-links.active {
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 10px 0;
+        }
+    }
+</style>
