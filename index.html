@@ -347,10 +347,14 @@
         `;
         nav.appendChild(burger);
 
+        // Move the burger menu to the opposite side of the logo
+        burger.style.marginLeft = "auto";
+
         burger.addEventListener("click", function () {
             navLinks.classList.toggle("active");
         });
     });
+    
 </script>
 <style>
     .burger {
