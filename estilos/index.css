@@ -162,6 +162,11 @@
         .content-bg-overlay {
             min-height: 200px;
         }
+        .content-bg-image {
+            left: 10px;
+            width: 100%;
+
+    }
     }
 
     .content-section.liderazgo {
