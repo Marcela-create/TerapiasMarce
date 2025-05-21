@@ -1,0 +1,84 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mi</title>
+    <link rel="stylesheet" href="estilos/sobre_mi.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicio.html">Servicio</a></li>
+            <li><a href="#sobre_mi.html">Sobre mí</a></li>
+        </ul>
+    </nav>
+    <section class="sobre-mi-section">
+        <div class="sobre-mi-img">
+            <img src="img/marce.jpeg" alt="Marcela Liliana Maidana">
+        </div>
+        <div class="sobre-mi-texto">
+            <h2>Sobre mí</h2>
+            <p>
+                ¡Hola! Soy <strong>Marcela Liliana Maidana, Licenciada en Pedagogía</strong>, <strong>Consultora Psicológica</strong> y profesional apasionada por el acompañamiento emocional y la formación constante. Creo profundamente en el poder sanador de la palabra, el vínculo humano y el liderazgo emocional.
+            </p>
+            <p>
+                Actualmente curso la <strong>Licenciatura en Psicología</strong> (ULA) y la <strong>Maestría en Psicología Clínica y de la Salud</strong> (FUNIBER), combinando mi formación académica con una mirada terapéutica integradora y humanista.
+            </p>
+            <p>
+                🎓 Fui reconocida por <strong>Excelencia Académica</strong> al egresar de la UTEL (México) como Licenciada en Pedagogía (2023), y me he especializado a lo largo de los años en diversas áreas vinculadas a la salud mental, la educación emocional y las neurociencias.
+            </p>
+            <p>Cuento con formación profesional en:</p>
+            <ul>
+                <li><strong>Master Counseling integrativo internacional</strong> (UPA, 2023)</li>
+                <li><strong>Coaching ontológico y educativo</strong> (Axon Training)</li>
+                <li><strong>Psicología clínica, sistémica y psicopatologías</strong> (PSI – Asociación para una Sociedad Integrada)</li>
+                <li><strong>Neuropsicología clínica, terapias de tercera generación y TCC</strong> (CIL, Colombia)</li>
+                <li><strong>Neuropedagogía aplicada</strong> y Coaching Neuropedagógico (Learny)</li>
+                <li><strong>Grafología y grafoterapia</strong>, como herramienta de autoconocimiento y análisis emocional (Instituto Grafhos, Ateneo)</li>
+                <li><strong>Grafología Forense</strong> (UAI - CES)</li>
+            </ul>
+            <p>He complementado mi formación con:</p>
+            <ul>
+                <li><strong>Post Grado Bioética</strong> (UBA)</li>
+                <li><strong>Psicopedagogía</strong> (Fundación Universitaria para la Educación, la ciencia y la cultura)</li>
+                <li><strong>Docencia universitaria</strong> (CIL, FET)</li>
+                <li>y estudios en <strong>psicología y antropología cristiana</strong>, con un enfoque integral del ser humano (FASTA)</li>
+            </ul>
+            <p></p>
+                🧠 Mi abordaje combina herramientas clínicas, educativas y espirituales. Trabajo con adultos que atraviesan ansiedad, agotamiento emocional, trastornos del ánimo o procesos de cambio. Acompaño desde el counseling, el coaching, la grafología, el focusing y la terapia emocional.
+            </p>
+            <p>
+                🌍 <strong>Todo el acompañamiento es a distancia, con calidez, escucha activa y absoluta confidencialidad.</strong> Si sentís que necesitás reconectar con tu bienestar, <strong>estoy para acompañarte</strong>.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <p>© Copyright Lic. Marcela Maidana - 2025</p>
+    </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const nav = document.querySelector("nav");
+        const navLinks = document.querySelector(".nav-links");
+        const burger = document.createElement("div");
+
+        burger.classList.add("burger");
+        burger.innerHTML = `
+            <span></span>
+            <span></span>
+            <span></span>
+        `;
+        nav.appendChild(burger);
+
+        burger.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+    });
+</script>

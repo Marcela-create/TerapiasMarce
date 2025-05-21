@@ -3,95 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terapias Marcela</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 50px;
-            padding: 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: black;
-            padding: 10px 100px; /* Igual al padding de la sección */
-            width: 100%; /* Asegura que ocupe todo el ancho de la página */
-            box-sizing: border-box; /* Incluye el padding en el ancho total */
-        }
-
-        .logo img {
-            height: 100px; /* Tamaño más grande para la imagen del logo */
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav-links li {
-            margin: 0 15px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: white;
-            font-size: 20px; /* Tamaño más grande para las letras del nav */
-        }
-
-        .content-section {
-            display: flex;
-            flex-direction: row; /* Asegura que la imagen y el texto estén uno al lado del otro */
-            align-items: flex-start;
-            gap: 20px;
-        }
-
-
-        .content-text {
-            flex: 2;
-            font-size: 18px; /* Ajusta el tamaño del texto */
-            line-height: 1.6;
-        }
-
-        .content-section {
-            display: flex;
-            align-items: inline-block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 100px;
-            gap: 20px;
-            max-width: 3200px; /* Define un ancho máximo para la sección */
-            margin: 0 auto; /* Centra la sección horizontalmente */
-            padding: 0 20px; /* Añade un padding interno para pantallas pequeñas */
-            box-sizing: border-box; /* Ensures padding is included in width */
-        }
-        section {
-            max-width: auto; /* Define un ancho máximo para la sección */
-            margin: 0 auto; /* Centra la sección horizontalmente */
-            padding: 0 20px; /* Añade un padding interno para pantallas pequeñas */
-            box-sizing: border-box;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .nav-links li {
-                margin: 10px 0;
-            }
-
-            .content-section,
-            section,
-            nav {
-                padding: 0 10px; /* Reduce el margen en pantallas pequeñas */
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="estilos/index.css">
 </head>
 <body>
     <nav>
@@ -101,51 +13,78 @@
         <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="servicio.html">Servicio</a></li>
+            <li><a href="sobre_mi.html">Sobre mí</a></li>
         </ul>
         
     </nav>
+    <div class="banner-liderazgo">
+        <span class="banner-text">“<em>Liderazgo emocional para sanar</em>”</span>
+    </div>
     <div class="portada-container" style="text-align: center;">
         <img src="img/portada.png" alt="Imagen de portada" style="width: 100%; height: auto; max-height: 500px; object-fit: cover;">
  
     </div>
     <div class="video-container" style="text-align: center; position: relative; padding-bottom: 10px; overflow: hidden;">
-        <iframe src="https://www.youtube.com/embed/qcB0xQH9sTc" title="La fibromialgia, su verdadero origen y como curarla" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="1009" height="480" src="https://www.youtube.com/embed/qcB0xQH9sTc" title="La fibromialgia, su verdadero origen y como curarla" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <div style="display: flex; justify-content: center;padding:30px ">
+    <section>
+        <div class="content-section content-bg-overlay">
+            <div class="content-bg-image"></div>
+            <div class="content-text">
+                <h2 class="content-title">Fibromialgia: Mi experiencia, el origen emocional y cómo sané</h2>
+                <p>
+                Soy Licenciada Marcela Liliana Maidana. Consultora Psicológica, terapeuta en Biomagnetismo Médico desde hace más de 15 años, y actualmente curso el último año de la Licenciatura en Psicología como mi segunda carrera y la Maestría en Psicología Clínica. ✨ En este video comparto mi experiencia con la fibromialgia, cómo fue vivirla, cómo descubrí el por qué aparece en nuestras vidas y, sobre todo, cómo logré sanar hace ya 14 años.
+                </p>
+                <p>
+                🧠 La fibromialgia no es solo dolor físico. Es una forma en que nuestro cuerpo expresa emociones no resueltas, traumas no elaborados y vivencias que muchas veces callamos. Desde pérdidas significativas, responsabilidades que nos exceden, hasta heridas invisibles en la infancia: todo eso puede manifestarse en nuestro cuerpo. 📌 Hablamos de:
+                </p>
+                <ul>
+                <li>Qué es la fibromialgia y cómo se diagnostica hoy según la OMS (CIE-11).</li>
+                <li>Cómo se siente vivir con ella (desde el cuerpo y desde el alma).</li>
+                <li>El impacto de la incomprensión social y médica.</li>
+                <li>El rol de las emociones atrapadas, el trauma relacional y la desvalorización.</li>
+                <li>Por qué no alcanza con calmar los síntomas y por qué es necesario mirar hacia adentro.</li>
+                <li>Cómo logré sanar con el enfoque integrador: emociones atrapadas, biomagnetismo, péndulo terapéutico y focusing.</li>
+                </ul>
+                <p>
+                💜 Si vivís con fibromialgia o querés comprender mejor a alguien que la padece, este video es para vos. 👉 No estás sola. No estás solo. Hay otra manera de vivir. Yo te escucho. Todo el acompañamiento es a distancia, personalizado y confidencial.
+                </p>
+                <p>📩 Escribime, consultame. ¡Estoy para ayudarte!</p>
+            </div>
+        </div>
+    </section>
+      <div style="display: flex; justify-content: center;padding:30px">
         <a href="https://api.whatsapp.com/send?phone=+5492262539414&text=quiero%20sanarfibromialgia" target="_blank" style="text-decoration: none;">
             <button style="display: flex; align-items: center; justify-content: center; background-color: #25D366; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 40px;">
                 <img src="img/icono whatsapp.svg" alt="WhatsApp Icon" style="width: 40px; height: 40px; margin-right: 10px;">
                 Contácteme
             </button>
         </a>
-        </a>
     </div>
-    <section>
-        <div class="content-section" style="display: flex; align-items: flex-start; gap: 20px; max-width: 1300px;">
-            <img src="img/fibromialgia.png" alt="Imagen relacionada con la fibromialgia" class="content-image" style="flex: 1; max-width: 50%; border-radius: 10px; object-fit: cover;">
-            <div class="content-text" style="flex: 2; font-size: 18px; line-height: 1.6;">
-            <h2 class="content-title" style="font-size: 24px; margin-bottom: 20px;">Fibromialgia: Mi experiencia, el origen emocional y cómo sané</h2>
+    <div class="video-container" style="text-align: center; position: relative; padding-bottom: 10px; overflow: hidden;">
+        <iframe width="1009" height="480" src="https://www.youtube.com/embed/gJfj3ETfX0A" title="liderazgo emocional para sanar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+<section>
+    <div class="content-section liderazgo">
+        <div class="content-text">
+            <h2 class="content-title">Liderazgo emocional para sanar: El poder de la palabra</h2>
             <p>
-            Soy Licenciada Marcela Liliana Maidana. Consultora Psicológica, terapeuta en Biomagnetismo Médico desde hace más de 15 años, y actualmente curso el último año de la Licenciatura en Psicología como mi segunda carrera y la Maestría en Psicología Clínica. ✨ En este video comparto mi experiencia con la fibromialgia, cómo fue vivirla, cómo descubrí el por qué aparece en nuestras vidas y, sobre todo, cómo logré sanar hace ya 14 años.
-            </p>
-            <p>
-            🧠 La fibromialgia no es solo dolor físico. Es una forma en que nuestro cuerpo expresa emociones no resueltas, traumas no elaborados y vivencias que muchas veces callamos. Desde pérdidas significativas, responsabilidades que nos exceden, hasta heridas invisibles en la infancia: todo eso puede manifestarse en nuestro cuerpo. 📌 Hablamos de:
+                Las palabras que usamos a diario tienen un impacto profundo en nuestra salud emocional y física. El liderazgo emocional comienza dentro nuestro: transformar nuestro lenguaje interior puede cambiar nuestra vida.
             </p>
             <ul>
-            <li>Qué es la fibromialgia y cómo se diagnostica hoy según la OMS (CIE-11).</li>
-            <li>Cómo se siente vivir con ella (desde el cuerpo y desde el alma).</li>
-            <li>El impacto de la incomprensión social y médica.</li>
-            <li>El rol de las emociones atrapadas, el trauma relacional y la desvalorización.</li>
-            <li>Por qué no alcanza con calmar los síntomas y por qué es necesario mirar hacia adentro.</li>
-            <li>Cómo logré sanar con el enfoque integrador: emociones atrapadas, biomagnetismo, péndulo terapéutico y focusing.</li>
+                <li>Dinámica inicial: cómo el "sí" suaviza y el "no" endurece.</li>
+                <li>Ejemplos de enfermedades vinculadas a emociones y pensamientos negativos.</li>
+                <li>El impacto del lenguaje en la salud: cuerpo, mente y emociones.</li>
+                <li>Reflexión sobre trauma relacional, exigencia, culpa y sacrificio.</li>
+                <li>Metáforas poderosas para entender el origen emocional del dolor.</li>
+                <li>Meditación final: “La palabra que habita en mí”.</li>
             </ul>
             <p>
-            💜 Si vivís con fibromialgia o querés comprender mejor a alguien que la padece, este video es para vos. 👉 No estás sola. No estás solo. Hay otra manera de vivir. Yo te escucho. Todo el acompañamiento es a distancia, personalizado y confidencial.
+                Este enfoque está dirigido a quienes buscan sanar desde lo emocional, mental, corporal y espiritual. Si querés trabajar tus emociones, resignificar lo que viviste o comenzar tu propio proceso de sanación, contactame. Todo el acompañamiento es a distancia, personalizado y confidencial.
             </p>
-            <p>📩 Escribime, consultame. ¡Estoy para ayudarte!</p>
-            </div>
         </div>
-    </section>
+    </div>
+</section>
       <div style="display: flex; justify-content: center;padding:30px">
         <a href="https://api.whatsapp.com/send?phone=+5492262539414&text=quiero%20sanarfibromialgia" target="_blank" style="text-decoration: none;">
             <button style="display: flex; align-items: center; justify-content: center; background-color: #25D366; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 40px;">
@@ -170,168 +109,12 @@
             </div>
         </div>
     </section>
-    <style>
-        .therapy-section {
-            display: flex;
-            justify-content: center;
-            padding: 30px 20px;
-            box-sizing: border-box;
-        }
-
-        .therapy-content {
-            display: flex;
-            align-items: stretch; /* Asegura que la imagen y el texto tengan la misma altura */
-            gap: 100px;
-            max-width: 900px;
-            width: 100%;
-        }
-
-        .therapy-image {
-            flex: 1;
-            max-width: 40%;
-            border-radius: 10px;
-            object-fit: cover;
-            width: 100%;
-            height: auto;
-        }
-
-        .therapy-text {
-            flex: 2;
-            font-size: 18px;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Centra el texto verticalmente */
-        }
-
-        .therapy-title {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        
-        @media (max-width: 768px) {
-            .therapy-content {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-            .therapy-image {
-                max-width: 80%;
-            }
-
-            .therapy-text {
-                font-size: 16px;
-            }
-
-            .therapy-title {
-                font-size: 20px;
-            }
-        }
-    </style>
     <footer style="background-color: black; text-align: center; padding: 20px; color: white;">
         <div>
             <img src="img/logo.png" alt="Logo" style="height: 100px; margin-bottom: 10px;">
         </div>
         <p style="margin: 0; font-size: 15px;">© Copyright Lic. Marcela Maidana - 2025</p>
     </footer>
-<style>
-    .video-container iframe {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 80%;
-        height: 80%;
-        margin: 10 50% 0 10% !important;
-    }
-
-    .content-image {
-        flex: 1;
-        border-radius: 10px;
-        object-fit: cover;
-        height: auto;
-    }
-
-    .content-text {
-        flex: 1;
-        font-size: 28px; /* Aumenta el tamaño del texto */
-        line-height: 1.8;
-    }
-
-    .content-title {
-        font-size: 40px; /* Aumenta el tamaño del título */
-    }
-    
-    @media (max-width: 480px) {
-        body {
-            font-size: 16px; /* Reduce el tamaño de la fuente para pantallas pequeñas */
-        }
-
-        nav {
-            padding: 10px;
-        }
-
-        .logo img {
-            height: 60px; /* Reduce el tamaño del logo */
-        }
-
-        .nav-links {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .nav-links a {
-            font-size: 16px; /* Reduce el tamaño de las letras del nav */
-        }
-
-        .content-section {
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .content-image {
-            max-width: 100%;
-        }
-
-        .content-text {
-            font-size: 14px; /* Ajusta el tamaño del texto */
-        }
-
-        .therapy-content {
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .therapy-image {
-            max-width: 100%;
-        }
-
-        .therapy-text {
-            font-size: 14px;
-        }
-
-        .therapy-title {
-            font-size: 18px;
-        }
-
-        .video-container iframe {
-            width: 100%;
-            height: 220px;
-            display: block;
-        }
-
-        .video-container{
-            margin-right: 35px;
-        }
-        }
-
-        footer {
-            font-size: 12px; /* Reduce el tamaño del texto del footer */
-        }
-    
-</style>
-</body>
-</html>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const nav = document.querySelector("nav");
@@ -355,46 +138,5 @@
     });
     
 </script>
-<style>
-    .burger {
-        display: none;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 20px;
-        cursor: pointer;
-    }
-
-    .burger span {
-        display: block;
-        height: 3px;
-        background-color: white;
-        border-radius: 2px;
-    }
-
-    @media (max-width: 768px) {
-        .burger {
-            display: flex;
-        }
-
-        .nav-links {
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            background-color: black;
-            position: absolute;
-            top: 60px;
-            right: 0;
-            width: 100%;
-            padding: 10px 0;
-        }
-
-        .nav-links.active {
-            display: flex;
-        }
-
-        .nav-links li {
-            margin: 10px 0;
-        }
-    }
-</style>
+</body>
+</html>

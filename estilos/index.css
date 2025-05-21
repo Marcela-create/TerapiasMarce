@@ -1,0 +1,457 @@
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 50px;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        padding: 10px 100px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .logo img {
+        height: 100px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .content-section {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        max-width: 3200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    section {
+        max-width: auto;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-links li {
+            margin: 10px 0;
+        }
+
+        .content-section,
+        section,
+        nav {
+            padding: 0 10px;
+        }
+    }
+
+    .banner-liderazgo {
+        width: 100%;
+        background: #000;
+        text-align: center;
+        font-size: 48px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 40px 0 30px 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .banner-text {
+        background: linear-gradient(90deg, #ffe066 0%, #ffd700 50%, #fffbe6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 1px #ffd700, 0 0 3px #fffbe6;
+        font-style: italic;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    @media (max-width: 768px) {
+        .banner-liderazgo {
+            font-size: 28px;
+            padding: 25px 0 20px 0;
+        }
+    }
+    @media (max-width: 480px) {
+        .banner-liderazgo {
+            font-size: 18px;
+            padding: 15px 0 10px 0;
+        }
+    }
+
+    .content-bg-overlay {
+        position: relative;
+        min-height: 400px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+    .content-bg-image {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        z-index: 1;
+        opacity: 0.25;
+        filter: blur(1px);
+        background: url('img/fibromialgia.png') center center/cover no-repeat;
+    }
+    .portada-container {
+        margin-bottom: 40px;
+    }
+    .video-container {
+        margin-top: 40px;
+    }
+    .content-bg-overlay .content-text {
+        position: relative;
+        z-index: 2;
+        border-radius: 16px;
+        padding: 40px;
+        font-size: 18px;
+        line-height: 1.6;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+        color: #222;
+        max-width: 900px;
+        width: 100%;
+    }
+    .content-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+        .content-bg-overlay .content-text {
+            padding: 20px;
+            font-size: 16px;
+        }
+        .content-bg-overlay {
+            min-height: 200px;
+        }
+    }
+
+    .content-section.liderazgo {
+        max-width: 1300px;
+        margin: 40px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+    .liderazgo .content-text {
+        position: relative;
+        z-index: 2;
+        background: rgba(255,255,255,0.85);
+        border-radius: 16px;
+        padding: 40px;
+        font-size: 18px;
+        line-height: 1.6;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+        color: #222;
+        max-width: 900px;
+        width: 100%;
+    }
+    .liderazgo .content-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+        .content-section.liderazgo {
+            padding: 0 5px;
+        }
+        .liderazgo .content-text {
+            padding: 20px;
+            font-size: 16px;
+        }
+    }
+
+    .video-container iframe {
+        width: 80%;
+        max-width: 1009px;
+        height: 480px;
+        max-height: 60vw;
+        margin: 0 auto;
+        display: block;
+    }
+    .video-description {
+        max-width: 1009px;
+        margin: 0 auto 40px auto;
+        padding: 0 10%;
+        font-size: 20px;
+        line-height: 1.6;
+        box-sizing: border-box;
+    }
+    @media (max-width: 1024px) {
+        .video-container iframe,
+        .video-description {
+            width: 100%;
+            max-width: 100%;
+            padding: 0 5%;
+        }
+    }
+    @media (max-width: 768px) {
+        .video-container iframe {
+            width: 100%;
+            height: 220px;
+            max-width: 100%;
+        }
+        .video-description {
+            font-size: 16px;
+            padding: 0 5%;
+        }
+    }
+    @media (max-width: 480px) {
+        .video-container iframe {
+            width: 100%;
+            height: 180px;
+        }
+        .video-description {
+            font-size: 14px;
+            padding: 0 2%;
+        }
+    }
+
+    .therapy-section {
+        display: flex;
+        justify-content: center;
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
+
+    .therapy-content {
+        display: flex;
+        align-items: stretch;
+        gap: 100px;
+        max-width: 900px;
+        width: 100%;
+    }
+
+    .therapy-image {
+        flex: 1;
+        max-width: 40%;
+        border-radius: 10px;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .therapy-text {
+        flex: 2;
+        font-size: 18px;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .therapy-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    @media (max-width: 768px) {
+        .therapy-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .therapy-image {
+            max-width: 80%;
+        }
+
+        .therapy-text {
+            font-size: 16px;
+        }
+
+        .therapy-title {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        body {
+            font-size: 16px;
+        }
+
+        nav {
+            padding: 10px;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 16px;
+        }
+
+        .content-section {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .content-image {
+            max-width: 100%;
+        }
+
+        .content-text {
+            font-size: 14px;
+        }
+
+        .therapy-content {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .therapy-image {
+            max-width: 100%;
+        }
+
+        .therapy-text {
+            font-size: 14px;
+        }
+
+        .therapy-title {
+            font-size: 18px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 220px;
+            display: block;
+        }
+
+        .video-container{
+            margin-right: 35px;
+        }
+        }
+
+        footer {
+            font-size: 12px;
+        }
+    
+    .burger {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .burger span {
+        display: block;
+        height: 3px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    @media (max-width: 768px) {
+        .burger {
+            display: flex;
+        }
+
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        .nav-links.active {
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 10px 0;
+        }
+    }
+
+    .video-container {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100%;
+        margin: 0 auto 30px auto;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .video-container iframe {
+        display: block;
+        margin: 0 auto;
+        width: 80vw;
+        max-width: 1009px;
+        height: 45vw;
+        max-height: 480px;
+        border: none;
+    }
+    @media (max-width: 1024px) {
+        .video-container iframe {
+            width: 95vw;
+            max-width: 100%;
+            height: 53vw;
+            max-height: 400px;
+        }
+    }
+    @media (max-width: 768px) {
+        .video-container {
+            padding: 0;
+        }
+        .video-container iframe {
+            width: 100vw;
+            max-width: 100%;
+            height: 56vw;
+            max-height: 220px;
+        }
+    }
+    @media (max-width: 480px) {
+        .video-container iframe {
+            width: 100vw;
+            max-width: 100%;
+            height: 56vw;
+            max-height: 180px;
+        }
+    }
